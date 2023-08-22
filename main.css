@@ -1,0 +1,154 @@
+*{ /* resetando as configurações */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Adicionando as fontes do google fonts */
+header,
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', cursive; /* link copiado do google fonts */
+    font-weight: normal;
+}
+
+body, input, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+/* Configurando o cabeçalho "header" */
+header { 
+    padding: 16px 0px; /* Delimitando as medidas internas e a borda */
+    background-color: #182c61;
+    color: #ecf0f1; /* cor do texto */
+}
+
+/*header h1, { Como eu adicionei uma marca, esse comando ficou apenas para a aula*/
+
+header nav li { /* Configurando o menu de navegação */
+    display: inline;
+    margin-left: 16px;
+    color: #ecf0f1;
+    font-size: 16px;
+}
+
+header nav li a{ /* Configurandoo o link do menu de navegação" */
+    color: #ecf0f1;
+    text-decoration: none; /* tira o sublinhado */
+}
+
+.container { /* Delimitando as medidas do header, 1280 px e ele vai ocupar 100% dessa medida */
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto; /* ordem das medidas: (cima baixo) (direita esquerda) */
+}
+
+header .container, /* Deixando os links e o logo na mesma linha */
+section .container { /* reaproveitando a mesma configuração (efeito cascata) */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Deixando os links na extremidade oposta */
+}
+/* Configurando o Sobre */
+.brands-list img {
+    height: 24px; /* Delimitando o tamanho das imagens */
+    margin-top: 10px;
+    margin-right: 8px;
+}
+
+.brands-list li {
+    display: inline;
+}
+
+section .container {
+    align-items: flex-start; /* alterando o alinhamento do container da section */
+}
+
+section { /* alterando o espaçamento da section */
+    padding: 24px 0;
+}
+
+section h2 { /* alterando a margem do h2 da section */
+    margin-bottom: 16px;
+}
+
+section {
+    color: #182c61;
+}
+
+section p { /* alterando a margem do paragrafo da section */
+    margin-bottom: 8px;
+}
+
+.store-front { /* alterando a margem da imagem da section */
+    margin-right: 32px;
+}
+
+.social-links img{
+    height: 24px; /* Delimitando o tamanho das imagens */
+    /*margin-top: 10px;
+     */
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input, /*aplicando os mesmos estilos ao formulário */
+form textarea
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+#textarea { /* Bolqueia a função de redimensionamento de caixa de texto pelo user */
+    resize: none;
+    height: 180px;
+    width: 320px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button { /* Colocando cores no botão do formulário */
+    background-color: #182c61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer; /* alterando o cursor sobre o botão */
+    width: 320px;
+
+}
+
+form button:hover { /* alterando o estado botão do formulário */
+    background-color: #ff5506;
+}
+
+input:focus, textarea:focus {
+    outline-color: #182c61
+}
+
+#textarea::placeholder{ /* arrumando o texto interno do input */
+    padding: 10px;
+}
+
+footer {
+    background-color: #182c61;
+    color: #ecf0f1;
+    padding: 16px 0px;
+}
